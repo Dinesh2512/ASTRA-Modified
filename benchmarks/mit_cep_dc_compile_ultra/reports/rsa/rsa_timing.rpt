@@ -1,0 +1,34 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : modexp_core
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:59:20 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: cycle_ctr_high_reg_reg_9_
+              (rising edge-triggered flip-flop)
+  Endpoint: cycles[41] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  cycle_ctr_high_reg_reg_9_/CLK (DFFSR)                   0.00 #     0.00 r
+  cycle_ctr_high_reg_reg_9_/Q (DFFSR)                     0.11       0.11 r
+  U197695/Y (BUFX2)                                       0.05       0.16 r
+  cycles[41] (out)                                        0.00       0.16 r
+  data arrival time                                                  0.16
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

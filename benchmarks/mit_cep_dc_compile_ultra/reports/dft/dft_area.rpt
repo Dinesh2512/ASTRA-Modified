@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : dft_top
+Version: R-2020.09-SP5
+Date   : Fri Feb  2 18:33:35 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'dft_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    gscl45nm (File: /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db)
+
+Number of ports:                          132
+Number of nets:                        165897
+Number of cells:                       161977
+Number of combinational cells:         123001
+Number of sequential cells:             38761
+Number of macros/black boxes:               0
+Number of buf/inv:                      42706
+Number of references:                      20
+
+Combinational area:             337731.744220
+Buf/Inv area:                    60785.612135
+Noncombinational area:          309239.127239
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                646970.871459
+Total area:                 undefined
+1

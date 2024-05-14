@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : FIR_filter
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:41:13 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    gscl45nm (File: /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db)
+
+Number of ports:                           66
+Number of nets:                          2232
+Number of cells:                         1787
+Number of combinational cells:           1347
+Number of sequential cells:               439
+Number of macros/black boxes:               0
+Number of buf/inv:                        809
+Number of references:                      13
+
+Combinational area:               5602.034198
+Buf/Inv area:                     1563.238255
+Noncombinational area:            4532.499496
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 10134.533694
+Total area:                 undefined
+1

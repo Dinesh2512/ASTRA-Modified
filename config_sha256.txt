@@ -1,0 +1,24 @@
+set_hdl /home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/mit_cep_gscl_synthesised/sha256.v
+set_top sha256
+set_clk clk
+set_rst rst
+set_library /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.lib
+set_tool_library /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+#set_timing_file /home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/mit_cep_gscl_synthesised/sha256_dump.txt
+set_library_primitive /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.v
+#set_insertion_type slack_aware 
+#set_reuse_logic true
+#set_puf_template nand
+#set_puf_template mixed_mode
+set_debug false 
+set_regression 16 
+#set_regression 10
+#set_dont_touch vivado
+set_suppress_message 0 1 2 
+set_suppress_message 26 27 28 30
+#set_verification true
+set_lec true
+set_number_of_tests 100
+set_control_ports init next
+set_status_ports ready digest_valid
+start

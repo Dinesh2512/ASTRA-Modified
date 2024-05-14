@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : des3
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:40:47 2024
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: roundSel_reg_2_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_valid (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  roundSel_reg_2_/CLK (DFFPOSX1)           0.00       0.00 r
+  roundSel_reg_2_/Q (DFFPOSX1)             0.12       0.12 f
+  U3381/Y (NOR3X1)                         0.07       0.19 r
+  U3341/Y (AND2X1)                         0.03       0.21 r
+  U3342/Y (INVX1)                          0.04       0.26 f
+  U3385/Y (NOR3X1)                         0.06       0.32 r
+  out_valid (out)                          0.00       0.32 r
+  data arrival time                                   0.32
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

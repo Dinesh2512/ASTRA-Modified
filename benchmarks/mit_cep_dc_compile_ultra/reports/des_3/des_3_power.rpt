@@ -1,0 +1,54 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : des3
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:40:47 2024
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.5871 mW   (58%)
+  Net Switching Power  =   1.1553 mW   (42%)
+                         ---------
+Total Dynamic Power    =   2.7424 mW  (100%)
+
+Cell Leakage Power     =  29.9608 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.2741        4.4597e-03        7.4219e+03            0.2860  (  10.32%)
+combinational      1.3130            1.1508        2.2539e+04            2.4863  (  89.68%)
+--------------------------------------------------------------------------------------------------
+Total              1.5871 mW         1.1553 mW     2.9961e+04 nW         2.7723 mW
+1

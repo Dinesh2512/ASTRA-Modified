@@ -1,0 +1,6 @@
+set_app_var target_library /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/sha56_resynthesized/reduced_gscl45nm.lib
+set_app_var link_library /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/sha56_resynthesized/reduced_gscl45nm.lib
+read_file -f verilog {/home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/sha56_resynthesized/sha256.v /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/sha56_resynthesized/sha256_k_constants.v /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/sha56_resynthesized/sha256_w_mem.v}
+set hdlin_ff_always_sync_set_reset true
+compile -ungroup_all
+write -f verilog -o test.v

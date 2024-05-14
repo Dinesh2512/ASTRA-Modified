@@ -1,0 +1,1144 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP5 for linux64 - Apr 23, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/UFAD/a.chatterjee/.synopsys_dc_gui/preferences.tcl
+set module_name "md5"
+md5
+define_design_lib WORK -path ./WORK
+1
+set suppress_errors {IFS-001}
+IFS-001
+set sh_continue_on_error true
+true
+set verilogout_no_tri true
+true
+set_app_var target_library /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+set_app_var link_library /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+analyze -f verilog {/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v}
+Running PRESTO HDLC
+Compiling source file /home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v
+Presto compilation completed successfully.
+Loading db file '/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db'
+1
+elaborate ${module_name}
+Loading db file '/apps/syn/syn/libraries/syn/gtech.db'
+Loading db file '/apps/syn/syn/libraries/syn/standard.sldb'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (md5)
+Elaborated 1 design.
+Current design is now 'md5'.
+Information: Building the design 'pancham'. (HDL-193)
+Warning:  /home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v:368: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block at line 336 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           368            |    user/user     |
+|           391            |    auto/auto     |
+|           584            |    auto/auto     |
+|           777            |    auto/auto     |
+|           970            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine pancham line 323 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| msg_in_valid_reg_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine pancham line 1194 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  msg_out_valid_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine pancham line 1200 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       DD_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       AA_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       BB_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       CC_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine pancham line 1210 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        D_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|        A_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|        B_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|        C_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine pancham line 1233 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      phase_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine pancham line 1244 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (pancham)
+Information: Building the design 'pancham_round'. (HDL-193)
+
+Statistics for case statements in always block at line 1335 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/md5.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1344           |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (pancham_round)
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP5
+Date:        Thu Feb  1 20:41:47 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              34
+    Cells do not drive (LINT-1)                                     6
+    Connected to power or ground (LINT-32)                         27
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'pancham', cell 'B_79' does not drive any nets. (LINT-1)
+Warning: In design 'pancham', cell 'B_82' does not drive any nets. (LINT-1)
+Warning: In design 'pancham_round', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'pancham_round', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'pancham_round', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'pancham_round', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[31]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[30]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[29]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[28]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[27]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[26]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[25]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[24]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[23]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[22]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[21]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[20]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[19]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[18]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[17]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[16]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[15]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[14]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[13]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[12]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[11]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[10]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[9]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[8]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[7]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[6]' is connected to logic 0. 
+Warning: In design 'pancham', a pin on submodule 'ROUND' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 's[5]' is connected to logic 0. 
+Warning: In design 'pancham', the same net is connected to more than one pin on submodule 'ROUND'. (LINT-33)
+   Net '*Logic0*' is connected to pins 's[31]', 's[30]'', 's[29]', 's[28]', 's[27]', 's[26]', 's[25]', 's[24]', 's[23]', 's[22]', 's[21]', 's[20]', 's[19]', 's[18]', 's[17]', 's[16]', 's[15]', 's[14]', 's[13]', 's[12]', 's[11]', 's[10]', 's[9]', 's[8]', 's[7]', 's[6]', 's[5]'.
+1
+check_timing
+  Allocating blocks in 'DW01_ash_A_width32_SH_width32'
+  Allocating blocks in 'DW_rash_A_width32_SH_width32'
+Information: Updating design information... (UID-85)
+Warning: Design 'md5' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+md5_core/AA_reg[0]/next_state
+md5_core/AA_reg[0]/synch_enable
+md5_core/AA_reg[1]/next_state
+md5_core/AA_reg[1]/synch_enable
+md5_core/AA_reg[2]/next_state
+md5_core/AA_reg[2]/synch_enable
+md5_core/AA_reg[3]/next_state
+md5_core/AA_reg[3]/synch_enable
+md5_core/AA_reg[4]/next_state
+md5_core/AA_reg[4]/synch_enable
+md5_core/AA_reg[5]/next_state
+md5_core/AA_reg[5]/synch_enable
+md5_core/AA_reg[6]/next_state
+md5_core/AA_reg[6]/synch_enable
+md5_core/AA_reg[7]/next_state
+md5_core/AA_reg[7]/synch_enable
+md5_core/AA_reg[8]/next_state
+md5_core/AA_reg[8]/synch_enable
+md5_core/AA_reg[9]/next_state
+md5_core/AA_reg[9]/synch_enable
+md5_core/AA_reg[10]/next_state
+md5_core/AA_reg[10]/synch_enable
+md5_core/AA_reg[11]/next_state
+md5_core/AA_reg[11]/synch_enable
+md5_core/AA_reg[12]/next_state
+md5_core/AA_reg[12]/synch_enable
+md5_core/AA_reg[13]/next_state
+md5_core/AA_reg[13]/synch_enable
+md5_core/AA_reg[14]/next_state
+md5_core/AA_reg[14]/synch_enable
+md5_core/AA_reg[15]/next_state
+md5_core/AA_reg[15]/synch_enable
+md5_core/AA_reg[16]/next_state
+md5_core/AA_reg[16]/synch_enable
+md5_core/AA_reg[17]/next_state
+md5_core/AA_reg[17]/synch_enable
+md5_core/AA_reg[18]/next_state
+md5_core/AA_reg[18]/synch_enable
+md5_core/AA_reg[19]/next_state
+md5_core/AA_reg[19]/synch_enable
+md5_core/AA_reg[20]/next_state
+md5_core/AA_reg[20]/synch_enable
+md5_core/AA_reg[21]/next_state
+md5_core/AA_reg[21]/synch_enable
+md5_core/AA_reg[22]/next_state
+md5_core/AA_reg[22]/synch_enable
+md5_core/AA_reg[23]/next_state
+md5_core/AA_reg[23]/synch_enable
+md5_core/AA_reg[24]/next_state
+md5_core/AA_reg[24]/synch_enable
+md5_core/AA_reg[25]/next_state
+md5_core/AA_reg[25]/synch_enable
+md5_core/AA_reg[26]/next_state
+md5_core/AA_reg[26]/synch_enable
+md5_core/AA_reg[27]/next_state
+md5_core/AA_reg[27]/synch_enable
+md5_core/AA_reg[28]/next_state
+md5_core/AA_reg[28]/synch_enable
+md5_core/AA_reg[29]/next_state
+md5_core/AA_reg[29]/synch_enable
+md5_core/AA_reg[30]/next_state
+md5_core/AA_reg[30]/synch_enable
+md5_core/AA_reg[31]/next_state
+md5_core/AA_reg[31]/synch_enable
+md5_core/A_reg[0]/next_state
+md5_core/A_reg[0]/synch_enable
+md5_core/A_reg[1]/next_state
+md5_core/A_reg[1]/synch_enable
+md5_core/A_reg[2]/next_state
+md5_core/A_reg[2]/synch_enable
+md5_core/A_reg[3]/next_state
+md5_core/A_reg[3]/synch_enable
+md5_core/A_reg[4]/next_state
+md5_core/A_reg[4]/synch_enable
+md5_core/A_reg[5]/next_state
+md5_core/A_reg[5]/synch_enable
+md5_core/A_reg[6]/next_state
+md5_core/A_reg[6]/synch_enable
+md5_core/A_reg[7]/next_state
+md5_core/A_reg[7]/synch_enable
+md5_core/A_reg[8]/next_state
+md5_core/A_reg[8]/synch_enable
+md5_core/A_reg[9]/next_state
+md5_core/A_reg[9]/synch_enable
+md5_core/A_reg[10]/next_state
+md5_core/A_reg[10]/synch_enable
+md5_core/A_reg[11]/next_state
+md5_core/A_reg[11]/synch_enable
+md5_core/A_reg[12]/next_state
+md5_core/A_reg[12]/synch_enable
+md5_core/A_reg[13]/next_state
+md5_core/A_reg[13]/synch_enable
+md5_core/A_reg[14]/next_state
+md5_core/A_reg[14]/synch_enable
+md5_core/A_reg[15]/next_state
+md5_core/A_reg[15]/synch_enable
+md5_core/A_reg[16]/next_state
+md5_core/A_reg[16]/synch_enable
+md5_core/A_reg[17]/next_state
+md5_core/A_reg[17]/synch_enable
+md5_core/A_reg[18]/next_state
+md5_core/A_reg[18]/synch_enable
+md5_core/A_reg[19]/next_state
+md5_core/A_reg[19]/synch_enable
+md5_core/A_reg[20]/next_state
+md5_core/A_reg[20]/synch_enable
+md5_core/A_reg[21]/next_state
+md5_core/A_reg[21]/synch_enable
+md5_core/A_reg[22]/next_state
+md5_core/A_reg[22]/synch_enable
+md5_core/A_reg[23]/next_state
+md5_core/A_reg[23]/synch_enable
+md5_core/A_reg[24]/next_state
+md5_core/A_reg[24]/synch_enable
+md5_core/A_reg[25]/next_state
+md5_core/A_reg[25]/synch_enable
+md5_core/A_reg[26]/next_state
+md5_core/A_reg[26]/synch_enable
+md5_core/A_reg[27]/next_state
+md5_core/A_reg[27]/synch_enable
+md5_core/A_reg[28]/next_state
+md5_core/A_reg[28]/synch_enable
+md5_core/A_reg[29]/next_state
+md5_core/A_reg[29]/synch_enable
+md5_core/A_reg[30]/next_state
+md5_core/A_reg[30]/synch_enable
+md5_core/A_reg[31]/next_state
+md5_core/A_reg[31]/synch_enable
+md5_core/BB_reg[0]/next_state
+md5_core/BB_reg[0]/synch_enable
+md5_core/BB_reg[1]/next_state
+md5_core/BB_reg[1]/synch_enable
+md5_core/BB_reg[2]/next_state
+md5_core/BB_reg[2]/synch_enable
+md5_core/BB_reg[3]/next_state
+md5_core/BB_reg[3]/synch_enable
+md5_core/BB_reg[4]/next_state
+md5_core/BB_reg[4]/synch_enable
+md5_core/BB_reg[5]/next_state
+md5_core/BB_reg[5]/synch_enable
+md5_core/BB_reg[6]/next_state
+md5_core/BB_reg[6]/synch_enable
+md5_core/BB_reg[7]/next_state
+md5_core/BB_reg[7]/synch_enable
+md5_core/BB_reg[8]/next_state
+md5_core/BB_reg[8]/synch_enable
+md5_core/BB_reg[9]/next_state
+md5_core/BB_reg[9]/synch_enable
+md5_core/BB_reg[10]/next_state
+md5_core/BB_reg[10]/synch_enable
+md5_core/BB_reg[11]/next_state
+md5_core/BB_reg[11]/synch_enable
+md5_core/BB_reg[12]/next_state
+md5_core/BB_reg[12]/synch_enable
+md5_core/BB_reg[13]/next_state
+md5_core/BB_reg[13]/synch_enable
+md5_core/BB_reg[14]/next_state
+md5_core/BB_reg[14]/synch_enable
+md5_core/BB_reg[15]/next_state
+md5_core/BB_reg[15]/synch_enable
+md5_core/BB_reg[16]/next_state
+md5_core/BB_reg[16]/synch_enable
+md5_core/BB_reg[17]/next_state
+md5_core/BB_reg[17]/synch_enable
+md5_core/BB_reg[18]/next_state
+md5_core/BB_reg[18]/synch_enable
+md5_core/BB_reg[19]/next_state
+md5_core/BB_reg[19]/synch_enable
+md5_core/BB_reg[20]/next_state
+md5_core/BB_reg[20]/synch_enable
+md5_core/BB_reg[21]/next_state
+md5_core/BB_reg[21]/synch_enable
+md5_core/BB_reg[22]/next_state
+md5_core/BB_reg[22]/synch_enable
+md5_core/BB_reg[23]/next_state
+md5_core/BB_reg[23]/synch_enable
+md5_core/BB_reg[24]/next_state
+md5_core/BB_reg[24]/synch_enable
+md5_core/BB_reg[25]/next_state
+md5_core/BB_reg[25]/synch_enable
+md5_core/BB_reg[26]/next_state
+md5_core/BB_reg[26]/synch_enable
+md5_core/BB_reg[27]/next_state
+md5_core/BB_reg[27]/synch_enable
+md5_core/BB_reg[28]/next_state
+md5_core/BB_reg[28]/synch_enable
+md5_core/BB_reg[29]/next_state
+md5_core/BB_reg[29]/synch_enable
+md5_core/BB_reg[30]/next_state
+md5_core/BB_reg[30]/synch_enable
+md5_core/BB_reg[31]/next_state
+md5_core/BB_reg[31]/synch_enable
+md5_core/B_reg[0]/next_state
+md5_core/B_reg[0]/synch_enable
+md5_core/B_reg[1]/next_state
+md5_core/B_reg[1]/synch_enable
+md5_core/B_reg[2]/next_state
+md5_core/B_reg[2]/synch_enable
+md5_core/B_reg[3]/next_state
+md5_core/B_reg[3]/synch_enable
+md5_core/B_reg[4]/next_state
+md5_core/B_reg[4]/synch_enable
+md5_core/B_reg[5]/next_state
+md5_core/B_reg[5]/synch_enable
+md5_core/B_reg[6]/next_state
+md5_core/B_reg[6]/synch_enable
+md5_core/B_reg[7]/next_state
+md5_core/B_reg[7]/synch_enable
+md5_core/B_reg[8]/next_state
+md5_core/B_reg[8]/synch_enable
+md5_core/B_reg[9]/next_state
+md5_core/B_reg[9]/synch_enable
+md5_core/B_reg[10]/next_state
+md5_core/B_reg[10]/synch_enable
+md5_core/B_reg[11]/next_state
+md5_core/B_reg[11]/synch_enable
+md5_core/B_reg[12]/next_state
+md5_core/B_reg[12]/synch_enable
+md5_core/B_reg[13]/next_state
+md5_core/B_reg[13]/synch_enable
+md5_core/B_reg[14]/next_state
+md5_core/B_reg[14]/synch_enable
+md5_core/B_reg[15]/next_state
+md5_core/B_reg[15]/synch_enable
+md5_core/B_reg[16]/next_state
+md5_core/B_reg[16]/synch_enable
+md5_core/B_reg[17]/next_state
+md5_core/B_reg[17]/synch_enable
+md5_core/B_reg[18]/next_state
+md5_core/B_reg[18]/synch_enable
+md5_core/B_reg[19]/next_state
+md5_core/B_reg[19]/synch_enable
+md5_core/B_reg[20]/next_state
+md5_core/B_reg[20]/synch_enable
+md5_core/B_reg[21]/next_state
+md5_core/B_reg[21]/synch_enable
+md5_core/B_reg[22]/next_state
+md5_core/B_reg[22]/synch_enable
+md5_core/B_reg[23]/next_state
+md5_core/B_reg[23]/synch_enable
+md5_core/B_reg[24]/next_state
+md5_core/B_reg[24]/synch_enable
+md5_core/B_reg[25]/next_state
+md5_core/B_reg[25]/synch_enable
+md5_core/B_reg[26]/next_state
+md5_core/B_reg[26]/synch_enable
+md5_core/B_reg[27]/next_state
+md5_core/B_reg[27]/synch_enable
+md5_core/B_reg[28]/next_state
+md5_core/B_reg[28]/synch_enable
+md5_core/B_reg[29]/next_state
+md5_core/B_reg[29]/synch_enable
+md5_core/B_reg[30]/next_state
+md5_core/B_reg[30]/synch_enable
+md5_core/B_reg[31]/next_state
+md5_core/B_reg[31]/synch_enable
+md5_core/CC_reg[0]/next_state
+md5_core/CC_reg[0]/synch_enable
+md5_core/CC_reg[1]/next_state
+md5_core/CC_reg[1]/synch_enable
+md5_core/CC_reg[2]/next_state
+md5_core/CC_reg[2]/synch_enable
+md5_core/CC_reg[3]/next_state
+md5_core/CC_reg[3]/synch_enable
+md5_core/CC_reg[4]/next_state
+md5_core/CC_reg[4]/synch_enable
+md5_core/CC_reg[5]/next_state
+md5_core/CC_reg[5]/synch_enable
+md5_core/CC_reg[6]/next_state
+md5_core/CC_reg[6]/synch_enable
+md5_core/CC_reg[7]/next_state
+md5_core/CC_reg[7]/synch_enable
+md5_core/CC_reg[8]/next_state
+md5_core/CC_reg[8]/synch_enable
+md5_core/CC_reg[9]/next_state
+md5_core/CC_reg[9]/synch_enable
+md5_core/CC_reg[10]/next_state
+md5_core/CC_reg[10]/synch_enable
+md5_core/CC_reg[11]/next_state
+md5_core/CC_reg[11]/synch_enable
+md5_core/CC_reg[12]/next_state
+md5_core/CC_reg[12]/synch_enable
+md5_core/CC_reg[13]/next_state
+md5_core/CC_reg[13]/synch_enable
+md5_core/CC_reg[14]/next_state
+md5_core/CC_reg[14]/synch_enable
+md5_core/CC_reg[15]/next_state
+md5_core/CC_reg[15]/synch_enable
+md5_core/CC_reg[16]/next_state
+md5_core/CC_reg[16]/synch_enable
+md5_core/CC_reg[17]/next_state
+md5_core/CC_reg[17]/synch_enable
+md5_core/CC_reg[18]/next_state
+md5_core/CC_reg[18]/synch_enable
+md5_core/CC_reg[19]/next_state
+md5_core/CC_reg[19]/synch_enable
+md5_core/CC_reg[20]/next_state
+md5_core/CC_reg[20]/synch_enable
+md5_core/CC_reg[21]/next_state
+md5_core/CC_reg[21]/synch_enable
+md5_core/CC_reg[22]/next_state
+md5_core/CC_reg[22]/synch_enable
+md5_core/CC_reg[23]/next_state
+md5_core/CC_reg[23]/synch_enable
+md5_core/CC_reg[24]/next_state
+md5_core/CC_reg[24]/synch_enable
+md5_core/CC_reg[25]/next_state
+md5_core/CC_reg[25]/synch_enable
+md5_core/CC_reg[26]/next_state
+md5_core/CC_reg[26]/synch_enable
+md5_core/CC_reg[27]/next_state
+md5_core/CC_reg[27]/synch_enable
+md5_core/CC_reg[28]/next_state
+md5_core/CC_reg[28]/synch_enable
+md5_core/CC_reg[29]/next_state
+md5_core/CC_reg[29]/synch_enable
+md5_core/CC_reg[30]/next_state
+md5_core/CC_reg[30]/synch_enable
+md5_core/CC_reg[31]/next_state
+md5_core/CC_reg[31]/synch_enable
+md5_core/C_reg[0]/next_state
+md5_core/C_reg[0]/synch_enable
+md5_core/C_reg[1]/next_state
+md5_core/C_reg[1]/synch_enable
+md5_core/C_reg[2]/next_state
+md5_core/C_reg[2]/synch_enable
+md5_core/C_reg[3]/next_state
+md5_core/C_reg[3]/synch_enable
+md5_core/C_reg[4]/next_state
+md5_core/C_reg[4]/synch_enable
+md5_core/C_reg[5]/next_state
+md5_core/C_reg[5]/synch_enable
+md5_core/C_reg[6]/next_state
+md5_core/C_reg[6]/synch_enable
+md5_core/C_reg[7]/next_state
+md5_core/C_reg[7]/synch_enable
+md5_core/C_reg[8]/next_state
+md5_core/C_reg[8]/synch_enable
+md5_core/C_reg[9]/next_state
+md5_core/C_reg[9]/synch_enable
+md5_core/C_reg[10]/next_state
+md5_core/C_reg[10]/synch_enable
+md5_core/C_reg[11]/next_state
+md5_core/C_reg[11]/synch_enable
+md5_core/C_reg[12]/next_state
+md5_core/C_reg[12]/synch_enable
+md5_core/C_reg[13]/next_state
+md5_core/C_reg[13]/synch_enable
+md5_core/C_reg[14]/next_state
+md5_core/C_reg[14]/synch_enable
+md5_core/C_reg[15]/next_state
+md5_core/C_reg[15]/synch_enable
+md5_core/C_reg[16]/next_state
+md5_core/C_reg[16]/synch_enable
+md5_core/C_reg[17]/next_state
+md5_core/C_reg[17]/synch_enable
+md5_core/C_reg[18]/next_state
+md5_core/C_reg[18]/synch_enable
+md5_core/C_reg[19]/next_state
+md5_core/C_reg[19]/synch_enable
+md5_core/C_reg[20]/next_state
+md5_core/C_reg[20]/synch_enable
+md5_core/C_reg[21]/next_state
+md5_core/C_reg[21]/synch_enable
+md5_core/C_reg[22]/next_state
+md5_core/C_reg[22]/synch_enable
+md5_core/C_reg[23]/next_state
+md5_core/C_reg[23]/synch_enable
+md5_core/C_reg[24]/next_state
+md5_core/C_reg[24]/synch_enable
+md5_core/C_reg[25]/next_state
+md5_core/C_reg[25]/synch_enable
+md5_core/C_reg[26]/next_state
+md5_core/C_reg[26]/synch_enable
+md5_core/C_reg[27]/next_state
+md5_core/C_reg[27]/synch_enable
+md5_core/C_reg[28]/next_state
+md5_core/C_reg[28]/synch_enable
+md5_core/C_reg[29]/next_state
+md5_core/C_reg[29]/synch_enable
+md5_core/C_reg[30]/next_state
+md5_core/C_reg[30]/synch_enable
+md5_core/C_reg[31]/next_state
+md5_core/C_reg[31]/synch_enable
+md5_core/DD_reg[0]/next_state
+md5_core/DD_reg[0]/synch_enable
+md5_core/DD_reg[1]/next_state
+md5_core/DD_reg[1]/synch_enable
+md5_core/DD_reg[2]/next_state
+md5_core/DD_reg[2]/synch_enable
+md5_core/DD_reg[3]/next_state
+md5_core/DD_reg[3]/synch_enable
+md5_core/DD_reg[4]/next_state
+md5_core/DD_reg[4]/synch_enable
+md5_core/DD_reg[5]/next_state
+md5_core/DD_reg[5]/synch_enable
+md5_core/DD_reg[6]/next_state
+md5_core/DD_reg[6]/synch_enable
+md5_core/DD_reg[7]/next_state
+md5_core/DD_reg[7]/synch_enable
+md5_core/DD_reg[8]/next_state
+md5_core/DD_reg[8]/synch_enable
+md5_core/DD_reg[9]/next_state
+md5_core/DD_reg[9]/synch_enable
+md5_core/DD_reg[10]/next_state
+md5_core/DD_reg[10]/synch_enable
+md5_core/DD_reg[11]/next_state
+md5_core/DD_reg[11]/synch_enable
+md5_core/DD_reg[12]/next_state
+md5_core/DD_reg[12]/synch_enable
+md5_core/DD_reg[13]/next_state
+md5_core/DD_reg[13]/synch_enable
+md5_core/DD_reg[14]/next_state
+md5_core/DD_reg[14]/synch_enable
+md5_core/DD_reg[15]/next_state
+md5_core/DD_reg[15]/synch_enable
+md5_core/DD_reg[16]/next_state
+md5_core/DD_reg[16]/synch_enable
+md5_core/DD_reg[17]/next_state
+md5_core/DD_reg[17]/synch_enable
+md5_core/DD_reg[18]/next_state
+md5_core/DD_reg[18]/synch_enable
+md5_core/DD_reg[19]/next_state
+md5_core/DD_reg[19]/synch_enable
+md5_core/DD_reg[20]/next_state
+md5_core/DD_reg[20]/synch_enable
+md5_core/DD_reg[21]/next_state
+md5_core/DD_reg[21]/synch_enable
+md5_core/DD_reg[22]/next_state
+md5_core/DD_reg[22]/synch_enable
+md5_core/DD_reg[23]/next_state
+md5_core/DD_reg[23]/synch_enable
+md5_core/DD_reg[24]/next_state
+md5_core/DD_reg[24]/synch_enable
+md5_core/DD_reg[25]/next_state
+md5_core/DD_reg[25]/synch_enable
+md5_core/DD_reg[26]/next_state
+md5_core/DD_reg[26]/synch_enable
+md5_core/DD_reg[27]/next_state
+md5_core/DD_reg[27]/synch_enable
+md5_core/DD_reg[28]/next_state
+md5_core/DD_reg[28]/synch_enable
+md5_core/DD_reg[29]/next_state
+md5_core/DD_reg[29]/synch_enable
+md5_core/DD_reg[30]/next_state
+md5_core/DD_reg[30]/synch_enable
+md5_core/DD_reg[31]/next_state
+md5_core/DD_reg[31]/synch_enable
+md5_core/D_reg[0]/next_state
+md5_core/D_reg[0]/synch_enable
+md5_core/D_reg[1]/next_state
+md5_core/D_reg[1]/synch_enable
+md5_core/D_reg[2]/next_state
+md5_core/D_reg[2]/synch_enable
+md5_core/D_reg[3]/next_state
+md5_core/D_reg[3]/synch_enable
+md5_core/D_reg[4]/next_state
+md5_core/D_reg[4]/synch_enable
+md5_core/D_reg[5]/next_state
+md5_core/D_reg[5]/synch_enable
+md5_core/D_reg[6]/next_state
+md5_core/D_reg[6]/synch_enable
+md5_core/D_reg[7]/next_state
+md5_core/D_reg[7]/synch_enable
+md5_core/D_reg[8]/next_state
+md5_core/D_reg[8]/synch_enable
+md5_core/D_reg[9]/next_state
+md5_core/D_reg[9]/synch_enable
+md5_core/D_reg[10]/next_state
+md5_core/D_reg[10]/synch_enable
+md5_core/D_reg[11]/next_state
+md5_core/D_reg[11]/synch_enable
+md5_core/D_reg[12]/next_state
+md5_core/D_reg[12]/synch_enable
+md5_core/D_reg[13]/next_state
+md5_core/D_reg[13]/synch_enable
+md5_core/D_reg[14]/next_state
+md5_core/D_reg[14]/synch_enable
+md5_core/D_reg[15]/next_state
+md5_core/D_reg[15]/synch_enable
+md5_core/D_reg[16]/next_state
+md5_core/D_reg[16]/synch_enable
+md5_core/D_reg[17]/next_state
+md5_core/D_reg[17]/synch_enable
+md5_core/D_reg[18]/next_state
+md5_core/D_reg[18]/synch_enable
+md5_core/D_reg[19]/next_state
+md5_core/D_reg[19]/synch_enable
+md5_core/D_reg[20]/next_state
+md5_core/D_reg[20]/synch_enable
+md5_core/D_reg[21]/next_state
+md5_core/D_reg[21]/synch_enable
+md5_core/D_reg[22]/next_state
+md5_core/D_reg[22]/synch_enable
+md5_core/D_reg[23]/next_state
+md5_core/D_reg[23]/synch_enable
+md5_core/D_reg[24]/next_state
+md5_core/D_reg[24]/synch_enable
+md5_core/D_reg[25]/next_state
+md5_core/D_reg[25]/synch_enable
+md5_core/D_reg[26]/next_state
+md5_core/D_reg[26]/synch_enable
+md5_core/D_reg[27]/next_state
+md5_core/D_reg[27]/synch_enable
+md5_core/D_reg[28]/next_state
+md5_core/D_reg[28]/synch_enable
+md5_core/D_reg[29]/next_state
+md5_core/D_reg[29]/synch_enable
+md5_core/D_reg[30]/next_state
+md5_core/D_reg[30]/synch_enable
+md5_core/D_reg[31]/next_state
+md5_core/D_reg[31]/synch_enable
+md5_core/current_state_reg[0]/next_state
+md5_core/current_state_reg[0]/synch_enable
+md5_core/current_state_reg[1]/next_state
+md5_core/current_state_reg[2]/next_state
+md5_core/current_state_reg[2]/synch_enable
+md5_core/current_state_reg[3]/next_state
+md5_core/current_state_reg[3]/synch_enable
+md5_core/current_state_reg[4]/next_state
+md5_core/current_state_reg[4]/synch_enable
+md5_core/current_state_reg[5]/next_state
+md5_core/current_state_reg[5]/synch_enable
+md5_core/current_state_reg[6]/next_state
+md5_core/current_state_reg[6]/synch_enable
+md5_core/msg_in_valid_reg_reg/next_state
+md5_core/msg_out_valid_reg/next_state
+md5_core/phase_reg[0]/next_state
+md5_core/phase_reg[1]/next_state
+md5_core/phase_reg[2]/next_state
+md5_core/phase_reg[3]/next_state
+msg_out_valid
+msg_output[0]
+msg_output[1]
+msg_output[2]
+msg_output[3]
+msg_output[4]
+msg_output[5]
+msg_output[6]
+msg_output[7]
+msg_output[8]
+msg_output[9]
+msg_output[10]
+msg_output[11]
+msg_output[12]
+msg_output[13]
+msg_output[14]
+msg_output[15]
+msg_output[16]
+msg_output[17]
+msg_output[18]
+msg_output[19]
+msg_output[20]
+msg_output[21]
+msg_output[22]
+msg_output[23]
+msg_output[24]
+msg_output[25]
+msg_output[26]
+msg_output[27]
+msg_output[28]
+msg_output[29]
+msg_output[30]
+msg_output[31]
+msg_output[32]
+msg_output[33]
+msg_output[34]
+msg_output[35]
+msg_output[36]
+msg_output[37]
+msg_output[38]
+msg_output[39]
+msg_output[40]
+msg_output[41]
+msg_output[42]
+msg_output[43]
+msg_output[44]
+msg_output[45]
+msg_output[46]
+msg_output[47]
+msg_output[48]
+msg_output[49]
+msg_output[50]
+msg_output[51]
+msg_output[52]
+msg_output[53]
+msg_output[54]
+msg_output[55]
+msg_output[56]
+msg_output[57]
+msg_output[58]
+msg_output[59]
+msg_output[60]
+msg_output[61]
+msg_output[62]
+msg_output[63]
+msg_output[64]
+msg_output[65]
+msg_output[66]
+msg_output[67]
+msg_output[68]
+msg_output[69]
+msg_output[70]
+msg_output[71]
+msg_output[72]
+msg_output[73]
+msg_output[74]
+msg_output[75]
+msg_output[76]
+msg_output[77]
+msg_output[78]
+msg_output[79]
+msg_output[80]
+msg_output[81]
+msg_output[82]
+msg_output[83]
+msg_output[84]
+msg_output[85]
+msg_output[86]
+msg_output[87]
+msg_output[88]
+msg_output[89]
+msg_output[90]
+msg_output[91]
+msg_output[92]
+msg_output[93]
+msg_output[94]
+msg_output[95]
+msg_output[96]
+msg_output[97]
+msg_output[98]
+msg_output[99]
+msg_output[100]
+msg_output[101]
+msg_output[102]
+msg_output[103]
+msg_output[104]
+msg_output[105]
+msg_output[106]
+msg_output[107]
+msg_output[108]
+msg_output[109]
+msg_output[110]
+msg_output[111]
+msg_output[112]
+msg_output[113]
+msg_output[114]
+msg_output[115]
+msg_output[116]
+msg_output[117]
+msg_output[118]
+msg_output[119]
+msg_output[120]
+msg_output[121]
+msg_output[122]
+msg_output[123]
+msg_output[124]
+msg_output[125]
+msg_output[126]
+msg_output[127]
+ready
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+set_max_area 0
+1
+ungroup -all -flatten -force
+1
+compile_ultra 
+Loading db file '/apps/syn/syn/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.5 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 6 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'md5'
+
+Loaded alib file './alib-52/gscl45nm.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'md5'
+Information: Added key list 'DesignWare' to design 'md5'. (DDB-72)
+ Implement Synthetic for 'md5'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: There is no timing violation in design md5. Delay-based auto_ungroup will not be performed. (OPT-780)
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:14   16662.0      0.00       0.0    8344.4                           59038.9375
+    0:00:14   16633.9      0.00       0.0    8210.5                           58963.1211
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:14   17047.8      0.00       0.0    8204.2                           62125.6523
+    0:00:14   17012.1      0.00       0.0    8170.5                           62004.6211
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:15   15756.3      0.00       0.0    7999.6                           51491.1172
+    0:00:15   15756.3      0.00       0.0    7999.6                           51491.1172
+    0:00:15   15756.3      0.00       0.0    7999.6                           51491.1172
+    0:00:15   15756.3      0.00       0.0    7999.6                           51491.1172
+    0:00:17   15429.6      0.00       0.0    7661.6                           50604.8828
+    0:00:17   15428.7      0.00       0.0    7661.1                           50591.0195
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:19   15287.4      0.00       0.0    7625.9                           50375.8008
+    0:00:19   15287.4      0.00       0.0    7625.9                           50375.8008
+    0:00:19   15287.4      0.00       0.0    7625.9                           50375.8008
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:19   15287.0      0.00       0.0    7689.8                           50366.8516
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:21   17433.1      0.00       0.0    4649.0                           65826.8516
+    0:00:21   17433.1      0.00       0.0    4649.0                           65826.8516
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:21   17433.1      0.00       0.0    4649.0                           65826.8516
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+    0:00:21   17118.7      0.00       0.0    4387.4                           65820.3828
+    0:00:21   17118.7      0.00       0.0    4387.4                           65820.3828
+    0:00:21   17118.7      0.00       0.0    4387.4                           65820.3828
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   16991.5      0.00       0.0    4599.4                           63395.1289
+    0:00:22   17429.3      0.00       0.0    4164.2                           65916.1875
+    0:00:22   17429.3      0.00       0.0    4164.2                           65916.1875
+    0:00:22   17429.3      0.00       0.0    4164.2                           65916.1875
+    0:00:22   17429.3      0.00       0.0    4164.2                           65916.1875
+    0:00:22   17429.3      0.00       0.0    4164.2                           65916.1875
+    0:00:22   17429.3      0.00       0.0    4164.2                           65916.1875
+Loading db file '/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+1
+change_names -rules verilog -hierarchy
+1
+write -f verilog -o ../designs/${module_name}.v
+Writing verilog file '/nelms/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/mit_cep_dc_compile_ultra/designs/md5.v'.
+1
+report_area > ../reports/${module_name}_area.rpt
+report_power > ../reports/${module_name}_power.rpt
+report_timing > ../reports/${module_name}_timing.rpt
+exit
+
+Memory usage for this session 139 Mbytes.
+Memory usage for this session including child processes 158 Mbytes.
+CPU usage for this session 25 seconds ( 0.01 hours ).
+Elapsed time for this session 28 seconds ( 0.01 hours ).
+
+Thank you...

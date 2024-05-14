@@ -1,0 +1,11 @@
+set_hdl /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/dft.v
+set_top dft
+set_clk CLK
+set_rst RTS
+set_library /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+set_tool_library /home/UFAD/a.chatterjee/Desktop/Lab_work/ASTRA/mit_cep/gscl45nm.db
+set_puf_size 1000
+set_dont_touch synopsys
+set_insertion_type slack_aware constrained
+set_timing_file /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/dft_dump.txt
+start

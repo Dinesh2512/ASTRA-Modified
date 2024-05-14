@@ -1,0 +1,11 @@
+set_hdl /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/sha256.v
+set_top sha256
+set_clk CLK
+set_rst RST
+set_library /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/freepdk/gscl45nm.lib
+set_tool_library /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/freepdk/gscl45nm.db
+set_regression 10
+set_dont_touch synopsys
+set_insertion_type slack_aware constrained
+set_timing_file /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra(copy)/benchmarks/mit_cep_gscl_synthesised/sha256_dump.txt
+start

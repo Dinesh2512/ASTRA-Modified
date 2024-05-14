@@ -1,0 +1,1 @@
+source /home/UFAD/a.chatterjee/Desktop/lab_work/astra/config_sha256.txt

@@ -1,0 +1,8 @@
+1)regression mode does not work - > 1st regression run modifies the graph G. The rest continues to work on this sullied Graph
+2)logic reuse -> false , puf_number > template pairs - > the excess puf elements also use the inverters(when template type = 0) identified in the puf pair
+3) for puf -> 1 : the output wire pufout[0] is printed which will create issues
+
+
+Things to do : 
+1) fix regression issue => complete the edge and vertex duplicate function
+2) create the testbench automation for automatic testing 

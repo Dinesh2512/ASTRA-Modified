@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : aes_192
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 21:03:19 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'aes_192' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    gscl45nm (File: /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db)
+
+Number of ports:                          452
+Number of nets:                        175373
+Number of cells:                       175050
+Number of combinational cells:         166548
+Number of sequential cells:              8502
+Number of macros/black boxes:               0
+Number of buf/inv:                      38272
+Number of references:                      19
+
+Combinational area:             374280.822656
+Buf/Inv area:                    55703.093165
+Noncombinational area:           67829.804695
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                442110.627351
+Total area:                 undefined
+1

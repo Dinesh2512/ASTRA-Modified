@@ -1,0 +1,112 @@
+## Benchmark group for regression
+## Options: "cep_full" | "cep_module" | "epfl" | "iscas85" | "iscas89" | "itc99" |  "misc" | "all"
+bench_group="cep_full"
+
+## Absolute Path to RIPPER binary
+binary="./astra"
+
+## Absolute Path to benchmarks directory
+bench_path="/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks"
+
+## Absolute Path to RIPPER lib directory
+lib_path="/home/UFAD/a.chatterjee/Desktop/lab_work/astra/libs/freepdk/"
+
+## Absolute Path to RIPPER CLUT models directory
+model_path="/home/UFAD/a.chatterjee/Desktop/lab_work/ripper/tool/lib/models/leda/"
+
+## Absolute Path to link library for input netlist
+## Not required for if input design is RTL
+link_lib=""
+
+## Absolute Path to target library
+target_lib="/home/UFAD/a.chatterjee/Desktop/lab_work/astra/libs/freepdk/"
+
+## Process_Voltage_Temperature String
+## To Look For In The Target Library File Name(s)
+pvt=""
+
+## Absolute Path to SDC file
+## Used during synthesis
+sdc_path="/home/UFAD/a.chatterjee/Desktop/lab_work/ripper/tool/test_runs/benchmarks_all/benchmarks_sdc/leda/"
+
+## Bitstream compaction (floating point between 50 and 100)
+bit_comp="90"
+
+## Random seed (integer)
+seed="1234"
+
+## Absolute Path to VCS directives file
+## Used during simulation 
+sim_directives=""
+
+## Absolute Path to DC TCL file 
+## Used during synthesis
+syn_tcl=""
+
+## Maximum Configuration Buffer Size (integer)
+buffer_size=""
+
+## CSB x-parameter (double)
+x_param_csb="3"
+
+## CSB y-parameter (double)
+y_param_csb="4"
+
+## Absolute Path to intel custom library
+custom_lib=""
+
+## Process Variant String To Look For In The Intel Library(s)
+variant=""
+
+## Timing Model String To Look For In The Intel Library(s) 
+timing=""
+
+## Target Period for Configuration Clock(s)
+config_clk_period=""
+
+## Maximum CLUT/CSB size (integer between 2 and 4)
+max_clut_size=""
+
+
+## RIPPER tool flags
+## Release flags: -debug -flow_map -show_logs -cadence_flow -no_csb -disable_io_renaming -disable_all_renaming -no_overheads -fdbk_from_csbout_mux -use_org_sdc -use_random_seed -lec
+## Intel flags: -custom -use_intel_sim_flags
+## !Release flags: -analyze -verify -use_sim_model -enable_lbr_msgs -use_uf_mux -disable_y_csb_comp -use_org_as_golden
+tool_flags="-debug -verify -lec -verify_lec -disable_compile_ultra"
+
+
+## Additional tool inputs
+##UF (LEDA) 1-Input Gate Area (double)
+uf_1in_area=""
+
+##UF (LEDA) 2-Input Gate Area (double)
+uf_2in_area=""
+
+##UF (LEDA) 3-Input Gate Area (double)
+uf_3in_area=""
+
+##UF (LEDA) 4-Input Gate Area (double)
+uf_4in_area=""
+
+##CLUT2 skew parameter (double)
+clut2_incr=""
+
+##CLUT3 skew parameter (double)
+clut3_incr=""
+
+##CLUT4 skew parameter (double)
+clut4_incr=""
+
+
+## Clean older runs before regression
+## Options: "true" | "false"
+clean_runs="true"
+
+## RIPPER output log file
+## Options: "true" | "false"
+hide_RIPPER_logs="false"
+
+## Fire RIPPER regression runs
+## Options: "true" | "false"
+fire_runs="true"
+

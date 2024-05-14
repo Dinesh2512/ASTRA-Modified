@@ -1,0 +1,23 @@
+Mapping and compare statistics
+================================================================================
+                     Compare Result       Golden            Revised
+--------------------------------------------------------------------------------
+Root module name                          sha256            sha256            
+
+Primary inputs                               516                516
+   Mapped                                    516                516
+
+Primary outputs                              258                258
+   Mapped                                    258                258
+      Equivalent                258
+
+Cut key points                                 0                 16
+   Unmapped                                    0                 16
+      Unreachable                              0                 16
+
+State key points                            1040               1056
+   Mapped                                   1040               1040
+      Equivalent               1040
+   Unmapped                                    0                 16
+      Unreachable                              0                 16
+================================================================================

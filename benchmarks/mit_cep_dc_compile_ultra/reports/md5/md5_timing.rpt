@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : md5
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:42:13 2024
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: md5_core_C_reg_15_
+              (rising edge-triggered flip-flop)
+  Endpoint: msg_output[55]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  md5_core_C_reg_15_/CLK (DFFPOSX1)        0.00       0.00 r
+  md5_core_C_reg_15_/Q (DFFPOSX1)          0.12       0.12 f
+  msg_output[55] (out)                     0.00       0.12 f
+  data arrival time                                   0.12
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : aes_192
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 21:03:33 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: validCounter_reg_4_
+              (rising edge-triggered flip-flop)
+  Endpoint: out_valid (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  validCounter_reg_4_/CLK (DFFPOSX1)       0.00 #     0.00 r
+  validCounter_reg_4_/Q (DFFPOSX1)         0.11       0.11 f
+  U303798/Y (NOR3X1)                       0.05       0.16 r
+  U303800/Y (NAND2X1)                      0.03       0.18 f
+  U303801/Y (NOR2X1)                       0.03       0.22 r
+  out_valid (out)                          0.00       0.22 r
+  data arrival time                                   0.22
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

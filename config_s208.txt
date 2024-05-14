@@ -1,0 +1,9 @@
+set_hdl /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/iscas89/s208.v
+set_top s208
+set_clk CLK
+set_rst RST
+set_library /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/freepdk/gscl45nm.lib
+set_tool_library /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/freepdk/gscl45nm.db
+set_reuse_logic false
+set_regression 20 30
+start

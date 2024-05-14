@@ -1,0 +1,889 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP5 for linux64 - Apr 23, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/UFAD/a.chatterjee/.synopsys_dc_gui/preferences.tcl
+set module_name "des3"
+des3
+define_design_lib WORK -path ./WORK
+1
+set suppress_errors {IFS-001}
+IFS-001
+set sh_continue_on_error true
+true
+set verilogout_no_tri true
+true
+set_app_var target_library /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+set_app_var link_library /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db
+analyze -f verilog {/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v}
+Running PRESTO HDLC
+Compiling source file /home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v
+Presto compilation completed successfully.
+Loading db file '/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db'
+1
+elaborate ${module_name}
+Loading db file '/apps/syn/syn/libraries/syn/gtech.db'
+Loading db file '/apps/syn/syn/libraries/syn/standard.sldb'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine des3 line 61 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     start_r_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine des3 line 74 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    roundSel_reg     | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine des3 line 88 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     desOut_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine des3 line 128 in file
+		'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        L_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|        R_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      FP_R_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (des3)
+Elaborated 1 design.
+Current design is now 'des3'.
+Information: Building the design 'crp'. (HDL-193)
+Presto compilation completed successfully. (crp)
+Information: Building the design 'key_sel3'. (HDL-193)
+
+Statistics for case statements in always block at line 295 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           300            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 322 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           324            |    user/user     |
+===============================================
+Presto compilation completed successfully. (key_sel3)
+Information: Building the design 'sbox1'. (HDL-193)
+
+Statistics for case statements in always block at line 1189 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1191           |    user/user     |
+===============================================
+Presto compilation completed successfully. (sbox1)
+Information: Building the design 'sbox2'. (HDL-193)
+
+Statistics for case statements in always block at line 1373 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1375           |    user/user     |
+===============================================
+Presto compilation completed successfully. (sbox2)
+Information: Building the design 'sbox3'. (HDL-193)
+
+Statistics for case statements in always block at line 1557 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1559           |    user/user     |
+===============================================
+Presto compilation completed successfully. (sbox3)
+Information: Building the design 'sbox4'. (HDL-193)
+
+Statistics for case statements in always block at line 1741 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1743           |    user/user     |
+===============================================
+Presto compilation completed successfully. (sbox4)
+Information: Building the design 'sbox5'. (HDL-193)
+
+Statistics for case statements in always block at line 1925 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1927           |    user/user     |
+===============================================
+Presto compilation completed successfully. (sbox5)
+Information: Building the design 'sbox6'. (HDL-193)
+
+Statistics for case statements in always block at line 2109 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           2111           |    user/user     |
+===============================================
+Presto compilation completed successfully. (sbox6)
+Information: Building the design 'sbox7'. (HDL-193)
+
+Statistics for case statements in always block at line 2293 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           2295           |    user/user     |
+===============================================
+Presto compilation completed successfully. (sbox7)
+Information: Building the design 'sbox8'. (HDL-193)
+
+Statistics for case statements in always block at line 2477 in file
+	'/home/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/cep_full/des3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           2479           |    user/user     |
+===============================================
+Presto compilation completed successfully. (sbox8)
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP5
+Date:        Thu Feb  1 20:40:02 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     17
+    Unconnected ports (LINT-28)                                    17
+
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'des3', cell 'C503' does not drive any nets. (LINT-1)
+Warning: In design 'key_sel3', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox1', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox1', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox2', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox2', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox3', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox3', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox4', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox4', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox5', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox5', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox6', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox6', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox7', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox7', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox8', port 'reset' is not connected to any nets. (LINT-28)
+Warning: In design 'sbox8', port 'clk' is not connected to any nets. (LINT-28)
+1
+check_timing
+Information: Updating design information... (UID-85)
+Warning: Design 'des3' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+FP_R_reg[1]/next_state
+FP_R_reg[2]/next_state
+FP_R_reg[3]/next_state
+FP_R_reg[4]/next_state
+FP_R_reg[5]/next_state
+FP_R_reg[6]/next_state
+FP_R_reg[7]/next_state
+FP_R_reg[8]/next_state
+FP_R_reg[9]/next_state
+FP_R_reg[10]/next_state
+FP_R_reg[11]/next_state
+FP_R_reg[12]/next_state
+FP_R_reg[13]/next_state
+FP_R_reg[14]/next_state
+FP_R_reg[15]/next_state
+FP_R_reg[16]/next_state
+FP_R_reg[17]/next_state
+FP_R_reg[18]/next_state
+FP_R_reg[19]/next_state
+FP_R_reg[20]/next_state
+FP_R_reg[21]/next_state
+FP_R_reg[22]/next_state
+FP_R_reg[23]/next_state
+FP_R_reg[24]/next_state
+FP_R_reg[25]/next_state
+FP_R_reg[26]/next_state
+FP_R_reg[27]/next_state
+FP_R_reg[28]/next_state
+FP_R_reg[29]/next_state
+FP_R_reg[30]/next_state
+FP_R_reg[31]/next_state
+FP_R_reg[32]/next_state
+FP_R_reg[33]/next_state
+FP_R_reg[34]/next_state
+FP_R_reg[35]/next_state
+FP_R_reg[36]/next_state
+FP_R_reg[37]/next_state
+FP_R_reg[38]/next_state
+FP_R_reg[39]/next_state
+FP_R_reg[40]/next_state
+FP_R_reg[41]/next_state
+FP_R_reg[42]/next_state
+FP_R_reg[43]/next_state
+FP_R_reg[44]/next_state
+FP_R_reg[45]/next_state
+FP_R_reg[46]/next_state
+FP_R_reg[47]/next_state
+FP_R_reg[48]/next_state
+FP_R_reg[49]/next_state
+FP_R_reg[50]/next_state
+FP_R_reg[51]/next_state
+FP_R_reg[52]/next_state
+FP_R_reg[53]/next_state
+FP_R_reg[54]/next_state
+FP_R_reg[55]/next_state
+FP_R_reg[56]/next_state
+FP_R_reg[57]/next_state
+FP_R_reg[58]/next_state
+FP_R_reg[59]/next_state
+FP_R_reg[60]/next_state
+FP_R_reg[61]/next_state
+FP_R_reg[62]/next_state
+FP_R_reg[63]/next_state
+FP_R_reg[64]/next_state
+L_reg[1]/next_state
+L_reg[2]/next_state
+L_reg[3]/next_state
+L_reg[4]/next_state
+L_reg[5]/next_state
+L_reg[6]/next_state
+L_reg[7]/next_state
+L_reg[8]/next_state
+L_reg[9]/next_state
+L_reg[10]/next_state
+L_reg[11]/next_state
+L_reg[12]/next_state
+L_reg[13]/next_state
+L_reg[14]/next_state
+L_reg[15]/next_state
+L_reg[16]/next_state
+L_reg[17]/next_state
+L_reg[18]/next_state
+L_reg[19]/next_state
+L_reg[20]/next_state
+L_reg[21]/next_state
+L_reg[22]/next_state
+L_reg[23]/next_state
+L_reg[24]/next_state
+L_reg[25]/next_state
+L_reg[26]/next_state
+L_reg[27]/next_state
+L_reg[28]/next_state
+L_reg[29]/next_state
+L_reg[30]/next_state
+L_reg[31]/next_state
+L_reg[32]/next_state
+R_reg[1]/next_state
+R_reg[2]/next_state
+R_reg[3]/next_state
+R_reg[4]/next_state
+R_reg[5]/next_state
+R_reg[6]/next_state
+R_reg[7]/next_state
+R_reg[8]/next_state
+R_reg[9]/next_state
+R_reg[10]/next_state
+R_reg[11]/next_state
+R_reg[12]/next_state
+R_reg[13]/next_state
+R_reg[14]/next_state
+R_reg[15]/next_state
+R_reg[16]/next_state
+R_reg[17]/next_state
+R_reg[18]/next_state
+R_reg[19]/next_state
+R_reg[20]/next_state
+R_reg[21]/next_state
+R_reg[22]/next_state
+R_reg[23]/next_state
+R_reg[24]/next_state
+R_reg[25]/next_state
+R_reg[26]/next_state
+R_reg[27]/next_state
+R_reg[28]/next_state
+R_reg[29]/next_state
+R_reg[30]/next_state
+R_reg[31]/next_state
+R_reg[32]/next_state
+desOut[0]
+desOut[1]
+desOut[2]
+desOut[3]
+desOut[4]
+desOut[5]
+desOut[6]
+desOut[7]
+desOut[8]
+desOut[9]
+desOut[10]
+desOut[11]
+desOut[12]
+desOut[13]
+desOut[14]
+desOut[15]
+desOut[16]
+desOut[17]
+desOut[18]
+desOut[19]
+desOut[20]
+desOut[21]
+desOut[22]
+desOut[23]
+desOut[24]
+desOut[25]
+desOut[26]
+desOut[27]
+desOut[28]
+desOut[29]
+desOut[30]
+desOut[31]
+desOut[32]
+desOut[33]
+desOut[34]
+desOut[35]
+desOut[36]
+desOut[37]
+desOut[38]
+desOut[39]
+desOut[40]
+desOut[41]
+desOut[42]
+desOut[43]
+desOut[44]
+desOut[45]
+desOut[46]
+desOut[47]
+desOut[48]
+desOut[49]
+desOut[50]
+desOut[51]
+desOut[52]
+desOut[53]
+desOut[54]
+desOut[55]
+desOut[56]
+desOut[57]
+desOut[58]
+desOut[59]
+desOut[60]
+desOut[61]
+desOut[62]
+desOut[63]
+desOut_reg[0]/next_state
+desOut_reg[0]/synch_enable
+desOut_reg[1]/next_state
+desOut_reg[1]/synch_enable
+desOut_reg[2]/next_state
+desOut_reg[2]/synch_enable
+desOut_reg[3]/next_state
+desOut_reg[3]/synch_enable
+desOut_reg[4]/next_state
+desOut_reg[4]/synch_enable
+desOut_reg[5]/next_state
+desOut_reg[5]/synch_enable
+desOut_reg[6]/next_state
+desOut_reg[6]/synch_enable
+desOut_reg[7]/next_state
+desOut_reg[7]/synch_enable
+desOut_reg[8]/next_state
+desOut_reg[8]/synch_enable
+desOut_reg[9]/next_state
+desOut_reg[9]/synch_enable
+desOut_reg[10]/next_state
+desOut_reg[10]/synch_enable
+desOut_reg[11]/next_state
+desOut_reg[11]/synch_enable
+desOut_reg[12]/next_state
+desOut_reg[12]/synch_enable
+desOut_reg[13]/next_state
+desOut_reg[13]/synch_enable
+desOut_reg[14]/next_state
+desOut_reg[14]/synch_enable
+desOut_reg[15]/next_state
+desOut_reg[15]/synch_enable
+desOut_reg[16]/next_state
+desOut_reg[16]/synch_enable
+desOut_reg[17]/next_state
+desOut_reg[17]/synch_enable
+desOut_reg[18]/next_state
+desOut_reg[18]/synch_enable
+desOut_reg[19]/next_state
+desOut_reg[19]/synch_enable
+desOut_reg[20]/next_state
+desOut_reg[20]/synch_enable
+desOut_reg[21]/next_state
+desOut_reg[21]/synch_enable
+desOut_reg[22]/next_state
+desOut_reg[22]/synch_enable
+desOut_reg[23]/next_state
+desOut_reg[23]/synch_enable
+desOut_reg[24]/next_state
+desOut_reg[24]/synch_enable
+desOut_reg[25]/next_state
+desOut_reg[25]/synch_enable
+desOut_reg[26]/next_state
+desOut_reg[26]/synch_enable
+desOut_reg[27]/next_state
+desOut_reg[27]/synch_enable
+desOut_reg[28]/next_state
+desOut_reg[28]/synch_enable
+desOut_reg[29]/next_state
+desOut_reg[29]/synch_enable
+desOut_reg[30]/next_state
+desOut_reg[30]/synch_enable
+desOut_reg[31]/next_state
+desOut_reg[31]/synch_enable
+desOut_reg[32]/next_state
+desOut_reg[32]/synch_enable
+desOut_reg[33]/next_state
+desOut_reg[33]/synch_enable
+desOut_reg[34]/next_state
+desOut_reg[34]/synch_enable
+desOut_reg[35]/next_state
+desOut_reg[35]/synch_enable
+desOut_reg[36]/next_state
+desOut_reg[36]/synch_enable
+desOut_reg[37]/next_state
+desOut_reg[37]/synch_enable
+desOut_reg[38]/next_state
+desOut_reg[38]/synch_enable
+desOut_reg[39]/next_state
+desOut_reg[39]/synch_enable
+desOut_reg[40]/next_state
+desOut_reg[40]/synch_enable
+desOut_reg[41]/next_state
+desOut_reg[41]/synch_enable
+desOut_reg[42]/next_state
+desOut_reg[42]/synch_enable
+desOut_reg[43]/next_state
+desOut_reg[43]/synch_enable
+desOut_reg[44]/next_state
+desOut_reg[44]/synch_enable
+desOut_reg[45]/next_state
+desOut_reg[45]/synch_enable
+desOut_reg[46]/next_state
+desOut_reg[46]/synch_enable
+desOut_reg[47]/next_state
+desOut_reg[47]/synch_enable
+desOut_reg[48]/next_state
+desOut_reg[48]/synch_enable
+desOut_reg[49]/next_state
+desOut_reg[49]/synch_enable
+desOut_reg[50]/next_state
+desOut_reg[50]/synch_enable
+desOut_reg[51]/next_state
+desOut_reg[51]/synch_enable
+desOut_reg[52]/next_state
+desOut_reg[52]/synch_enable
+desOut_reg[53]/next_state
+desOut_reg[53]/synch_enable
+desOut_reg[54]/next_state
+desOut_reg[54]/synch_enable
+desOut_reg[55]/next_state
+desOut_reg[55]/synch_enable
+desOut_reg[56]/next_state
+desOut_reg[56]/synch_enable
+desOut_reg[57]/next_state
+desOut_reg[57]/synch_enable
+desOut_reg[58]/next_state
+desOut_reg[58]/synch_enable
+desOut_reg[59]/next_state
+desOut_reg[59]/synch_enable
+desOut_reg[60]/next_state
+desOut_reg[60]/synch_enable
+desOut_reg[61]/next_state
+desOut_reg[61]/synch_enable
+desOut_reg[62]/next_state
+desOut_reg[62]/synch_enable
+desOut_reg[63]/next_state
+desOut_reg[63]/synch_enable
+out_valid
+roundSel_reg[0]/next_state
+roundSel_reg[0]/synch_enable
+roundSel_reg[1]/next_state
+roundSel_reg[1]/synch_enable
+roundSel_reg[2]/next_state
+roundSel_reg[2]/synch_enable
+roundSel_reg[3]/next_state
+roundSel_reg[3]/synch_enable
+roundSel_reg[4]/next_state
+roundSel_reg[4]/synch_enable
+roundSel_reg[5]/next_state
+roundSel_reg[5]/synch_enable
+start_r_reg/next_state
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+set_max_area 0
+1
+ungroup -all -flatten -force
+1
+compile_ultra 
+Loading db file '/apps/syn/syn/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db"
+Library analysis succeeded.
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.5 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'des3'
+
+Loaded alib file './alib-52/gscl45nm.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'des3'
+ Implement Synthetic for 'des3'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: In design 'des3', the register 'FP_R_reg[1]' is removed because it is merged to 'R_reg[1]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[17]' is removed because it is merged to 'R_reg[17]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[26]' is removed because it is merged to 'R_reg[26]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[12]' is removed because it is merged to 'R_reg[12]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[10]' is removed because it is merged to 'R_reg[10]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[30]' is removed because it is merged to 'R_reg[30]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[5]' is removed because it is merged to 'R_reg[5]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[18]' is removed because it is merged to 'R_reg[18]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[3]' is removed because it is merged to 'R_reg[3]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[9]' is removed because it is merged to 'R_reg[9]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[2]' is removed because it is merged to 'R_reg[2]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[31]' is removed because it is merged to 'R_reg[31]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[21]' is removed because it is merged to 'R_reg[21]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[19]' is removed because it is merged to 'R_reg[19]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[25]' is removed because it is merged to 'R_reg[25]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[11]' is removed because it is merged to 'R_reg[11]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[6]' is removed because it is merged to 'R_reg[6]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[28]' is removed because it is merged to 'R_reg[28]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[27]' is removed because it is merged to 'R_reg[27]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[22]' is removed because it is merged to 'R_reg[22]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[4]' is removed because it is merged to 'R_reg[4]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[13]' is removed because it is merged to 'R_reg[13]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[20]' is removed because it is merged to 'R_reg[20]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[8]' is removed because it is merged to 'R_reg[8]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[16]' is removed because it is merged to 'R_reg[16]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[48]' is removed because it is merged to 'L_reg[16]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[24]' is removed because it is merged to 'R_reg[24]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[56]' is removed because it is merged to 'L_reg[24]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[40]' is removed because it is merged to 'L_reg[8]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[14]' is removed because it is merged to 'R_reg[14]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[46]' is removed because it is merged to 'L_reg[14]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[29]' is removed because it is merged to 'R_reg[29]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[32]' is removed because it is merged to 'R_reg[32]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[23]' is removed because it is merged to 'R_reg[23]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[55]' is removed because it is merged to 'L_reg[23]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[64]' is removed because it is merged to 'L_reg[32]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[7]' is removed because it is merged to 'R_reg[7]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[39]' is removed because it is merged to 'L_reg[7]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[15]' is removed because it is merged to 'R_reg[15]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[47]' is removed because it is merged to 'L_reg[15]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[61]' is removed because it is merged to 'L_reg[29]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[52]' is removed because it is merged to 'L_reg[20]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[45]' is removed because it is merged to 'L_reg[13]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[36]' is removed because it is merged to 'L_reg[4]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[54]' is removed because it is merged to 'L_reg[22]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[59]' is removed because it is merged to 'L_reg[27]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[60]' is removed because it is merged to 'L_reg[28]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[38]' is removed because it is merged to 'L_reg[6]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[43]' is removed because it is merged to 'L_reg[11]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[57]' is removed because it is merged to 'L_reg[25]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[51]' is removed because it is merged to 'L_reg[19]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[53]' is removed because it is merged to 'L_reg[21]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[63]' is removed because it is merged to 'L_reg[31]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[34]' is removed because it is merged to 'L_reg[2]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[41]' is removed because it is merged to 'L_reg[9]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[35]' is removed because it is merged to 'L_reg[3]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[50]' is removed because it is merged to 'L_reg[18]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[37]' is removed because it is merged to 'L_reg[5]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[62]' is removed because it is merged to 'L_reg[30]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[42]' is removed because it is merged to 'L_reg[10]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[44]' is removed because it is merged to 'L_reg[12]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[58]' is removed because it is merged to 'L_reg[26]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[49]' is removed because it is merged to 'L_reg[17]'. (OPT-1215)
+Information: In design 'des3', the register 'FP_R_reg[33]' is removed because it is merged to 'L_reg[1]'. (OPT-1215)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'des3'. (DDB-72)
+Information: There is no timing violation in design des3. Delay-based auto_ungroup will not be performed. (OPT-780)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04    6440.2      0.00       0.0    4188.6                           22618.0137
+    0:00:04    6440.2      0.00       0.0    4188.6                           22618.0137
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:05    6842.9      0.00       0.0    4188.6                           25649.2305
+    0:00:05    6842.9      0.00       0.0    4188.6                           25649.2305
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:05    6211.7      0.00       0.0    4144.6                           20728.5801
+    0:00:05    6211.7      0.00       0.0    4144.6                           20728.5801
+    0:00:05    6211.7      0.00       0.0    4144.6                           20728.5801
+    0:00:05    6211.7      0.00       0.0    4144.6                           20728.5801
+    0:00:05    6209.3      0.00       0.0    4145.0                           20724.8242
+    0:00:05    6208.4      0.00       0.0    4141.1                           20722.9453
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05    6202.7      0.00       0.0    4141.1                           20715.9785
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:06    7307.5      0.00       0.0    1787.8                           27542.6074
+    0:00:06    7307.5      0.00       0.0    1787.8                           27542.6074
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    7307.5      0.00       0.0    1787.8                           27542.6074
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+    0:00:06    7299.5      0.00       0.0    1628.2                           27625.8184
+    0:00:06    7299.5      0.00       0.0    1628.2                           27625.8184
+    0:00:06    7299.5      0.00       0.0    1628.2                           27625.8184
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7258.2      0.00       0.0    1679.7                           26838.2539
+    0:00:06    7896.4      0.00       0.0    1386.2                           29960.8418
+    0:00:06    7896.4      0.00       0.0    1386.2                           29960.8418
+    0:00:06    7896.4      0.00       0.0    1386.2                           29960.8418
+    0:00:06    7896.4      0.00       0.0    1386.2                           29960.8418
+    0:00:06    7896.4      0.00       0.0    1386.2                           29960.8418
+    0:00:06    7896.4      0.00       0.0    1386.2                           29960.8418
+Loading db file '/home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+1
+change_names -rules verilog -hierarchy
+1
+write -f verilog -o ../designs/${module_name}.v
+Writing verilog file '/nelms/UFAD/a.chatterjee/Desktop/lab_work/astra/benchmarks/mit_cep_dc_compile_ultra/designs/des3.v'.
+1
+report_area > ../reports/${module_name}_area.rpt
+report_power > ../reports/${module_name}_power.rpt
+report_timing > ../reports/${module_name}_timing.rpt
+exit
+
+Memory usage for this session 118 Mbytes.
+Memory usage for this session including child processes 139 Mbytes.
+CPU usage for this session 46 seconds ( 0.01 hours ).
+Elapsed time for this session 48 seconds ( 0.01 hours ).
+
+Thank you...

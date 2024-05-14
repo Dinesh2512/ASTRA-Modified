@@ -1,0 +1,8 @@
+
+#2)logic reuse -> false , puf_number > template pairs - > the excess puf elements also use the inverters(when template type = 0) identified in the puf pair
+#3) for puf -> 1 : the output wire pufout[0] is printed which will create issues
+
+
+Things to do : 
+1)Generate log file.
+

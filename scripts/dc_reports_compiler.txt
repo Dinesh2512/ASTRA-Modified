@@ -1,0 +1,62 @@
+# Set the target library and technology
+define_design_lib WORK -path ./WORK
+# Set the target library and technology
+set target_library "gscl45nm.db"
+set target_library_path "/home/UFAD/a.chatterjee/Desktop/lab_work/astra_no_reuse/libs/freepdk"
+set target_library_tech "gscl45nm"
+
+set link_library "/home/UFAD/a.chatterjee/Desktop/lab_work/astra_no_reuse/libs/freepdk/gscl45nm.db"
+
+# Create a list of subdirectories
+set subdirectories [list "aes_192" "des_3" "dft" "fir" "gps" "idft" "iir" "md5" "sha256"]
+
+# Iterate through each subdirectory
+foreach subdir $subdirectories {
+    # Set the subdirectory path
+    set subdir_path [file join [pwd] $subdir]
+    
+    # Get the list of Verilog files in the subdirectory
+    set verilog_files [glob -nocomplain -directory $subdir_path *.v]
+    
+    # Create subdirectories for area, power, and timing reports
+    set report_subdir_area [file join $subdir_path "area"]
+    set report_subdir_power [file join $subdir_path "power"]
+    set report_subdir_timing [file join $subdir_path "timing"]
+    
+    file mkdir $report_subdir_area
+    file mkdir $report_subdir_power
+    file mkdir $report_subdir_timing
+    
+    # Change the current design context to none
+    current_design none
+    
+    # Iterate through each Verilog file
+    foreach verilog_file $verilog_files {
+        # Extract the top module name from the Verilog file name
+        #set top_module [file rootname [file tail $verilog_file]]
+        set top_module $subdir
+        
+        # Extract the number from the Verilog file name
+        set number [regsub {^.*_puf_(\d+)\.v$} $verilog_file "\\1"]
+        
+        # Analyze and elaborate the design
+        analyze -format verilog $verilog_file
+        
+        # Change the current design context to the top module
+        current_design $top_module
+        
+        elaborate $top_module
+        
+        # Compile the design
+        #compile -map_effort high                
+        
+        # Report area, power, and timing
+        report_area > [file join $report_subdir_area "${top_module}_${number}_area.rpt"]
+        report_power > [file join $report_subdir_power "${top_module}_${number}_power.rpt"]
+        report_timing > [file join $report_subdir_timing "${top_module}_${number}_timing.rpt"]
+        
+        # Remove the current design from the context
+	remove_design
+    }
+}
+

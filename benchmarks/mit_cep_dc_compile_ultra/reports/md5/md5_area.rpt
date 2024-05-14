@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : md5
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:42:12 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    gscl45nm (File: /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db)
+
+Number of ports:                          646
+Number of nets:                          6598
+Number of cells:                         5760
+Number of combinational cells:           5491
+Number of sequential cells:               269
+Number of macros/black boxes:               0
+Number of buf/inv:                       1763
+Number of references:                      19
+
+Combinational area:              15283.223727
+Buf/Inv area:                     2898.866032
+Noncombinational area:            2146.108852
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 17429.332580
+Total area:                 undefined
+1

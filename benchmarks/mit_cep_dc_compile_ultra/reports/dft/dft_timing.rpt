@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dft_top
+Version: R-2020.09-SP5
+Date   : Fri Feb  2 18:33:45 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: stage17_instPerm77400_shiftFIFO_77422_mem_reg_0__0_
+              (rising edge-triggered flip-flop)
+  Endpoint: next_out (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  stage17_instPerm77400_shiftFIFO_77422_mem_reg_0__0_/CLK (DFFPOSX1)
+                                                          0.00 #     0.00 r
+  stage17_instPerm77400_shiftFIFO_77422_mem_reg_0__0_/Q (DFFPOSX1)
+                                                          0.10       0.10 f
+  next_out (out)                                          0.00       0.10 f
+  data arrival time                                                  0.10
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

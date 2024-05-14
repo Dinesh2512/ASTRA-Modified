@@ -1,0 +1,16 @@
+
+create_clock -name CLK -period 2 {CLK}
+set_input_delay 0.28 -clock CLK [all_inputs]
+set_output_delay 0.28 -clock CLK [all_outputs]
+report_timing >
+remove_design
+
+
+
+set allNets [get_nets]
+set mylist [get_object_name $allNets]   
+foreach {net} $mylist {
+    report_timing -to $net	
+}
+
+

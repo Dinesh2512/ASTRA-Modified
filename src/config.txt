@@ -1,0 +1,11 @@
+set_hdl /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/aes_192.v
+set_top aes_192
+set_clk clk
+set_rst rst
+set_library /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+set_tool_library /home/UFAD/a.chatterjee/Desktop/Lab_work/ASTRA/mit_cep/gscl45nm.db
+set_dont_touch vivado
+set_insertion_type slack_aware constrained
+set_timing_file /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/aes_192_dump.txt
+set_regression 128 256 512 1024 2048 3072 4096 5120 6144 7168 8192
+start

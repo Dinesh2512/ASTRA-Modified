@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIR_filter
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:41:14 2024
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: outData_reg_0_
+              (rising edge-triggered flip-flop)
+  Endpoint: outData[0] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  outData_reg_0_/CLK (DFFSR)               0.00       0.00 r
+  outData_reg_0_/Q (DFFSR)                 0.11       0.11 f
+  U1038/Y (BUFX2)                          0.04       0.15 f
+  outData[0] (out)                         0.00       0.15 f
+  data arrival time                                   0.15
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : sha256
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:42:47 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'sha256' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    gscl45nm (File: /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db)
+
+Number of ports:                          774
+Number of nets:                          8428
+Number of cells:                         7473
+Number of combinational cells:           6433
+Number of sequential cells:              1040
+Number of macros/black boxes:               0
+Number of buf/inv:                       2092
+Number of references:                      18
+
+Combinational area:              18744.311228
+Buf/Inv area:                     3639.890708
+Noncombinational area:            8297.223816
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 27041.535044
+Total area:                 undefined
+1

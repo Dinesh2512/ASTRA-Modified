@@ -1,0 +1,593 @@
+generate puf regression -> enter 1
+ generate area power and timing report -> enter 2
+ generate compiled report for the same -> enter 3
+ full run -> enter 4
+entered choice is: 4
+Regression Full Run: Stage:1
+starting the regression suite.
+./astra -source config.txt
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            ASTRA                              
+                   A MEL-PUF INSERTION Tool                    
+                         Version: 0.3
+                     EDA Flow: SYNOPSYS
+         Copyright : University of Florida, FL, USA            
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+WARNING: Memory leak guarenteed. Graph G pointer is just removed instead of freeing the entire graph structre. Only one design should be run in one run of the tool. Future development requires this to be fixed.
+INFO:Config File: config.txt
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 516 	 OutVar: 258
+INFO: Reading the different timing paths from /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/sha256_dump.txt.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+INFO: Output file name : ../reports/sha256/sha256_puf_128.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+INFO: Output file name : ../reports/sha256/sha256_puf_256.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+INFO: Output file name : ../reports/sha256/sha256_puf_512.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+INFO: Output file name : ../reports/sha256/sha256_puf_1024.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+INFO: Output file name : ../reports/sha256/sha256_puf_2048.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+INFO: Output file name : ../reports/sha256/sha256_puf_3072.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(4096) is greater than identified nodes for puf insertion(3849). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(5120) is greater than identified nodes for puf insertion(3849). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(6144) is greater than identified nodes for puf insertion(3849). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(7168) is greater than identified nodes for puf insertion(3849). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:7309 , Number of edges: 8373 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+
+
+-- User Specified Input Design File Name
+     : /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/sha256.v 
+
+-- User Specified Configuration File Name
+    : config.txt 
+Total Runtime: 27.86 seconds
+--------------------------------
+Job Finished. Exiting ... 
+
+./astra -source config.txt
+./astra -source config.txt
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            ASTRA                              
+                   A MEL-PUF INSERTION Tool                    
+                         Version: 0.3
+                     EDA Flow: SYNOPSYS
+         Copyright : University of Florida, FL, USA            
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+WARNING: Memory leak guarenteed. Graph G pointer is just removed instead of freeing the entire graph structre. Only one design should be run in one run of the tool. Future development requires this to be fixed.
+INFO:Config File: config.txt
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 516 	 OutVar: 130
+INFO: Reading the different timing paths from /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/md5_dump.txt.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+INFO: Output file name : ../reports/md5/md5_puf_128.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+INFO: Output file name : ../reports/md5/md5_puf_256.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+INFO: Output file name : ../reports/md5/md5_puf_512.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+ERROR: Number of PUFs(1024) is greater than identified nodes for puf insertion(573). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(2048) is greater than identified nodes for puf insertion(573). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(3072) is greater than identified nodes for puf insertion(573). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(4096) is greater than identified nodes for puf insertion(573). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(5120) is greater than identified nodes for puf insertion(573). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:5357 , Number of edges: 6113 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+
+
+-- User Specified Input Design File Name
+     : /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/md5.v 
+
+-- User Specified Configuration File Name
+    : config.txt 
+Total Runtime: 3.10 seconds
+--------------------------------
+Job Finished. Exiting ... 
+
+./astra -source config.txt
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            ASTRA                              
+                   A MEL-PUF INSERTION Tool                    
+                         Version: 0.3
+                     EDA Flow: SYNOPSYS
+         Copyright : University of Florida, FL, USA            
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+WARNING: Memory leak guarenteed. Graph G pointer is just removed instead of freeing the entire graph structre. Only one design should be run in one run of the tool. Future development requires this to be fixed.
+INFO:Config File: config.txt
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 34 	 OutVar: 32
+INFO: Reading the different timing paths from /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/iir_dump.txt.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+INFO: Output file name : ../reports/iir/iir_puf_128.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+INFO: Output file name : ../reports/iir/iir_puf_256.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+INFO: Output file name : ../reports/iir/iir_puf_512.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+INFO: Output file name : ../reports/iir/iir_puf_1024.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: Number of PUFs(2048) is greater than identified nodes for puf insertion(1107). Proceeding with the insertion can severely affect the timing of the design. Please rerun with slack slack aware PUF insertion disabled. Aborting Insertion....
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:2336 , Number of edges: 3006 , Number of gates:31
+WARNING: Number of Pufs exceeds number of inverters in the circuit......Inserting extra logic elements.
+WARNING: Setting the inverter instance INVX1 as PUF insertion target.
+ERROR: The number of PUF cannot exceed the number of nodes in the given design. Cannot insert PUFs in the design.
+
+
+-- User Specified Input Design File Name
+     : /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/iir.v 
+
+-- User Specified Configuration File Name
+    : config.txt 
+Total Runtime: 2.70 seconds
+--------------------------------
+Job Finished. Exiting ... 
+
+./astra -source config.txt
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            ASTRA                              
+                   A MEL-PUF INSERTION Tool                    
+                         Version: 0.3
+                     EDA Flow: SYNOPSYS
+         Copyright : University of Florida, FL, USA            
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+WARNING: Memory leak guarenteed. Graph G pointer is just removed instead of freeing the entire graph structre. Only one design should be run in one run of the tool. Future development requires this to be fixed.
+INFO:Config File: config.txt
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 67 	 OutVar: 65
+INFO: Reading the different timing paths from /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/idft_dump.txt.
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_128.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_256.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_512.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_1024.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_2048.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_3072.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_4096.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_5120.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_6144.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_7168.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Reading puf template file -> puf_template/puf_template.v 
+reading lib /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/libs/freepdk/gscl45nm.lib
+InVar: 2 	 OutVar: 1
+Number of vertices:158851 , Number of edges: 162651 , Number of gates:31
+INFO: Output file name : ../reports/idft/idft_puf_8192.v
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+INFO: Printing wires of pufs
+INFO: Printing the body
+INFO: Finished printing the puf inserted circuit
+
+------------------------ Printing out the body of the netlist please verify . Pufs are set to 1 by default------------------------
+
+
+
+-- User Specified Input Design File Name
+     : /home/UFAD/a.chatterjee/Desktop/Lab_work/astra_gitlab/astra/benchmarks/mit_cep_gscl_synthesised/idft.v 
+
+-- User Specified Configuration File Name
+    : config.txt 
+Total Runtime: 29089.52 seconds
+--------------------------------
+Job Finished. Exiting ... 
+
+./astra -source config.txt

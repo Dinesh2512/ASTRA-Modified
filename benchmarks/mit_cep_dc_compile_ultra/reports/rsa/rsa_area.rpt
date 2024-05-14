@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : modexp_core
+Version: R-2020.09-SP5
+Date   : Thu Feb  1 20:59:07 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'modexp_core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    gscl45nm (File: /home/UFAD/a.chatterjee/Desktop/lab_work/astra/freepdk/gscl45nm.db)
+
+Number of ports:                          324
+Number of nets:                        335930
+Number of cells:                       335763
+Number of combinational cells:         277776
+Number of sequential cells:             57986
+Number of macros/black boxes:               0
+Number of buf/inv:                     122221
+Number of references:                      20
+
+Combinational area:             666087.805646
+Buf/Inv area:                   195499.581745
+Noncombinational area:          463148.405426
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               1129236.211072
+Total area:                 undefined
+1
